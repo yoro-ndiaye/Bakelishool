@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\View\View;
+use Illuminate\Routing\Controller;
 
 class ProfileController extends Controller
 {
@@ -60,4 +61,9 @@ class ProfileController extends Controller
     public function adiministrateur(){
         return view('profile.admin_master');
     }
+    public function vieAdmin()
+    {
+        return view('admin.dashboard'); // Afficher le tableau de bord de l'administrateur
+    }
+    
 }

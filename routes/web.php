@@ -1,8 +1,9 @@
 <?php
 
+
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\Admin\AdminController;
 use function PHPSTORM_META\type;
 
 /*
@@ -32,7 +33,21 @@ Route::middleware('auth')->group(function () {
 
 // Route middleware pour gerer l'authentification admin et user
 Route::middleware(['auth', 'role:admin'])->group(function () {
-    Route::get('/private', [ProfileController::class, 'adiministrateur'])->name('admin.master');
+    Route::get('/administrator', [AdminController::class, 'index'])->name('admin.dashboard');
+    // Route::get('/private', [AdminController::class, 'vieAdmin'])->name('administrateur');
 });
+
+//   Route::get('/private', function (){
+//        return view('dashboard');
+//     });
+
+
+
+
+
+// Route::middleware(['auth', 'role:admin'])
+//              ->group('/private', [ProfileController::class, 'vieAdmin'])
+//              ->name('admin.dashboard');
+
 
 require __DIR__.'/auth.php';
