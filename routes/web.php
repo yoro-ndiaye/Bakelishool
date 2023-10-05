@@ -32,7 +32,7 @@ Route::middleware('auth')->group(function () {
 
 // Route middleware pour gerer l'authentification admin et user
 Route::middleware(['auth', 'role:admin'])->group(function () {
-    Route::get('/private', [ProfileController::class, 'edit'])->name('profile.admin');
+    Route::get('/private', [ProfileController::class, 'adiministrateur'])->name('admin.master');
 });
 
 require __DIR__.'/auth.php';
