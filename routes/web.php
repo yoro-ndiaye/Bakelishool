@@ -31,11 +31,18 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+
+
 // Route middleware pour gerer l'authentification admin et user
+// Route::middleware(['auth', 'role:admin'])->group(function () {
+//     Route::get('/administrator', [AdminController::class, 'index'])->name('admin.dashboard');
+//     // Route::get('/private', [AdminController::class, 'vieAdmin'])->name('administrateur');
+// });
+
 Route::middleware(['auth', 'role:admin'])->group(function () {
-    Route::get('/administrator', [AdminController::class, 'index'])->name('admin.dashboard');
-    // Route::get('/private', [AdminController::class, 'vieAdmin'])->name('administrateur');
+    Route::get('/admin', [AdminController::class, 'index'])->name('admin.dashboard');
 });
+
 
 //   Route::get('/private', function (){
 //        return view('dashboard');
