@@ -25,6 +25,8 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
+//Route::get('/redirect', [ProfileController::class, 'redirect']);
+
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
@@ -34,14 +36,20 @@ Route::middleware('auth')->group(function () {
 
 
 // Route middleware pour gerer l'authentification admin et user
-// Route::middleware(['auth', 'role:admin'])->group(function () {
-//     Route::get('/administrator', [AdminController::class, 'index'])->name('admin.dashboard');
-//     // Route::get('/private', [AdminController::class, 'vieAdmin'])->name('administrateur');
-// });
-
 Route::middleware(['auth', 'role:admin'])->group(function () {
-    Route::get('/admin', [AdminController::class, 'index'])->name('admin.dashboard');
+    Route::get('/administrator', [AdminController::class, 'index'])->name('admin.dashboard');
+
+    // routes pour la gestion des clients
+    Route::get('/admin/users', [AdminController::class, 'listUsers'])->name('admin.list');
+   
+    // Ajoutez d'autres routes pour gérer les utilisateurs (modification, suppression, etc.).
+   Route::get('administrator/enregistrer', [AdminController::class, 'enregistrer'])->name('enregistrer');
+    Route::get('/private', [AdminController::class, 'vieAdmin'])->name('administrateur');
 });
+
+// Route::middleware(['auth', 'role:admin'])->group(function () {
+//     Route::get('/admin', [AdminController::class, 'vieAdmin'])->name('admin.dashboard');
+// });
 
 
 //   Route::get('/private', function (){

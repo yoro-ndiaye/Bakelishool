@@ -44,26 +44,26 @@
   <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo me-auto"><a href="index.html">Sailor</a></h1>
+      <h1 class="logo me-auto"><a href="index.html">Gestio-Stock</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <!-- <li><a href="#">Accueil</a></li> -->
 
-          <li class="dropdown"><a href="#"><span>About</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="about.html">About</a></li>
+          <li class="dropdown"><a href="#"><span>A Propos de Nous</span> <i class="bi bi-chevron-down"></i></a>
+            <!-- <ul>
+              <li><a href="about.html">A Propos de Nous</a></li>
               <li><a href="team.html">Team</a></li>
               <li><a href="testimonials.html">Testimonials</a></li>
-            </ul>
+            </ul> -->
           </li>
           <li><a href="services.html" class="active">Services</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
+          <!-- <li><a href="portfolio.html">Portfolio</a></li>
           <li><a href="pricing.html">Pricing</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="blog.html">Blog</a></li> -->
+          <li><a href="#">Contact</a></li>
 <!-- ******************************************************** -->
 <div class="hidden sm:flex sm:items-center sm:ml-6">
                 <x-dropdown align="right" width="48">
@@ -117,7 +117,7 @@
         <div class="d-flex justify-content-between align-items-center">
           <h2>Services</h2>
           <ol>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Accueil</a></li>
             <li>Services</li>
           </ol>
         </div>

@@ -13,15 +13,15 @@
             @endif 
 
         <ul>
-          <li><a href="index.html" class="active">Accueil</a></li>
+          <!-- <li><a href="index.html" class="active">Accueil</a></li> -->
 
-          <li class="dropdown"><a href="#" class="getstarted"><span>Connexion</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
+          <li class="dropdown"><a href="{{ route('login') }}" class="getstarted"><span>Connexion</span> <i class="bi bi-chevron-down"></i></a>
+            <!-- <ul>
               <li><a href="{{ route('login') }}">client</a></li>
               <li><a href="{{ route('login') }}">Grossiste</a></li>
               <li><a href="{{ route('login') }}">Administrateur</a></li>
              
-            </ul>
+            </ul> -->
           </li>
          
           <li><a href="{{ route('register') }}" class="getstarted">Creer un compte</a></li>

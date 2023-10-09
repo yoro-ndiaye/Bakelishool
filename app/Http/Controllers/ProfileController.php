@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\User;
 use App\Http\Requests\ProfileUpdateRequest;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
@@ -58,9 +58,14 @@ class ProfileController extends Controller
 
         return Redirect::to('/');
     }
-    public function adiministrateur(){
-        return view('profile.admin_master');
-    }
+
+public function redirect(){
+    $role=Auth::user()->role;
+}
+
+    // public function adiministrateur(){
+    //     return view('profile.admin_master');
+    // }
     public function vieAdmin()
     {
         return view('admin.dashboard'); // Afficher le tableau de bord de l'administrateur
