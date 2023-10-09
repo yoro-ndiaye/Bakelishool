@@ -15,11 +15,11 @@ class AdminController extends Controller
         return view('admin.dashboard');
     }
 
-    // public function enregistrer()
-    // {
-    //     // Votre logique pour la page d'administration ici
-    //     return view('admin.enregistrer');
-    // }
+    public function produit()
+    {
+        // Votre logique pour la page d'administration ici
+        return view('admin.produit');
+    }
 
     
     public function listUsers()

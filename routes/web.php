@@ -33,6 +33,7 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+Route::get('/produit', [AdminController::class, 'produit']);
 
 
 // Route middleware pour gerer l'authentification admin et user
@@ -40,7 +41,7 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
     Route::get('/administrator', [AdminController::class, 'index'])->name('admin.dashboard');
 
     // routes pour la gestion des clients
-    Route::get('/admin/users', [AdminController::class, 'listUsers'])->name('admin.list');
+    // Route::get('/admin/users', [AdminController::class, 'listUsers'])->name('admin.list');
    
     // Ajoutez d'autres routes pour gérer les utilisateurs (modification, suppression, etc.).
    Route::get('administrator/enregistrer', [AdminController::class, 'enregistrer'])->name('enregistrer');
