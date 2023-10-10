@@ -1,8 +1,9 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
    @include('admin.css')
 </head>
 
@@ -30,7 +31,7 @@
                 <!-- Begin Page Content -->
                
                 <div class="container">
-    <h1>Liste des Utilisateurs</h1>
+    <h1>Liste des details Utilisateurs</h1>
     <table class="table">
         <thead>
             <tr>
@@ -39,27 +40,12 @@
                 <th>Email</th>
                 <th>Adresse</th>
                 <th>Téléphone</th>
-                
+                <th>ID-Client</th>
                 <th>Actions</th>
-                
+                mbayyyyyyyyyyyyyyyyyyyyyyyDioppppppppppppppppppp
             </tr>
         </thead>
         <tbody>
-            @foreach ($users as $user)
-           
-                <tr>
-                    <td>{{ $user->id }}</td>
-                    <td>{{ $user->name }}</td>
-                    <td>{{ $user->email }}</td>
-                    <td>{{ $user->adresse }}</td>
-                    <td>{{ $user->telephone }}</td>
-                    
-                    <td>
-                        <div class="btn-group" role="group" aria-label="Basic example">
-                        <a href="#" class="btn btn-warning"><i class="fas fa-eye"></i> </a>&ensp;
-                    <a href="#" class="btn btn-primary"><i class="fas fa-edit"></i></a>&ensp;
-                    <button class="btn btn-danger" onclick="suppression()"><i class="fas fa-trash"></i></button>
-
    
     </div>
 </td>
@@ -94,7 +80,7 @@
 
 
 
-    // js pour la gestions  de ces elements suivant CRUD.  
+   
    
 
 </body>

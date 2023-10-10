@@ -16,51 +16,56 @@ class AdminController extends Controller
         // Votre logique pour la page d'administration ici
         return view('admin.dashboard');
     }
-
+// ***********************Ajout-supresion-modification-pour un utilisateur(CRUD)
     public function utilisateur()
     { $users = User::all(); // Récupère tous les utilisateurs
         return view('admin.utilisateur', ['users' => $users]);
         
+    }     
+    public function edit($id)
+    {
+        $user = User::find($id);
+        return view('users.edit', compact('user'));
     }
-
     
-  // Affiche le formulaire de modification d'un utilisateur
-  public function edition($id)
-  {
-      $users = User::find($id);
-  
-      if (!$users) {
-          // Gérer le cas où l'utilisateur n'existe pas
-          abort(404);
-      }
-  
-      return view('admin.edition', ['users' => $users]);
-  }
-  
+    public function update(Request $request, $id)
+    {
+        // Validation des données du formulaire
+        $request->validate([
+            'name' => 'required',
+            'email' => 'required|email',
+            'password' => 'required',
+            'telephone' => 'required',
+            'adresse' => 'required',
 
 
-// Met à jour un utilisateur
-public function modification(Request $request, $id)
-{
-    $user = User::find($id);
-    // Validez et mettez à jour les données de l'utilisateur ici
-    // ...
-
-    return redirect()->route('admin.utilisateur')->with('success', 'Utilisateur mis à jour avec succès');
-}
-
-// Supprime un utilisateur
-public function supression($id)
-{
-    $user = User::find($id);
-    // Supprimez l'utilisateur ici
-    // ...
-
-    return redirect()->route('admin.utilisateur')->with('success', 'Utilisateur supprimé avec succès');
-}
-// ************************************************************************************
+        ]);
+    
+        // Mise à jour de l'utilisateur
+        User::find($id)->update($request->all());
+    
+        return redirect('/ajouterProduit')
+            ->with('success', 'Utilisateur mis à jour avec succès');
+    }
+    
+    public function destroy($id)
+    {
+        // Suppression de l'utilisateur
+        User::find($id)->delete();
+    
+        return redirect('/ajouterProduit')
+            ->with('success', 'Utilisateur supprimé avec succès');
+    }
+// ***********************Ajout-supresion-modification-pour un utilisateur(CRUD)
+   
+// ***********************Ajout-supresion-modification-d'un  (CRUD)
 public  function  ajouterProduit(){
     return view('admin.ajouterProduit');
+}
+
+public  function  show(string $id){
+$user =User::findOrFail($id);
+return view('admin.show',compact($user));
 }
 // ************************************************************************************
     //function pour les categories de produits
@@ -101,5 +106,13 @@ public  function  ajouterProduit(){
 return redirect('/ajouterProduit')->with('success', 'Le produit a été ajouté avec succès.');
 
     }
+
+    // fonction pour afficher la liste des produits
+    public function listeProduit()
+    {
+        $produits = Produit::all();
+        return view('admin.listeProduit', compact('produits'));
+    }
+
       
 }

@@ -34,18 +34,31 @@ Route::middleware('auth')->group(function () {
 });
 // ***************************************************
 // route pour la gestion d'un utilisateur cote administrateur
-Route::get('/produit', [AdminController::class, 'utilisateur']);
+ Route::get('/produit', [AdminController::class, 'utilisateur']);
 
 // Route pour afficher le formulaire de modification d'un utilisateur
-Route::get('/admin/edition/{id}/edit', [AdminController::class, 'edition']);
+// Route::get('/admin/{id}/edition', [AdminController::class, 'edition'])->name('admin.edition');
+Route::get('/admin/users/{id}/edition', [AdminController::class, 'edition'])->name('admin.edition');
+// Route pour modifier un utilisateur dans la base de donnée
+Route::put('/admin/{user}',[AdminController::class,'modifierUser'])->name("admin.modification");
 
-// Route pour mettre à jour un utilisateur
-Route::put('/admin/modification/{id}', [AdminController::class, 'modification']);
+// Route pour afficher la liste des produit
+// routes/web.php
 
-// Route pour supprimer un utilisateur
-Route::delete('/admin/supression/{id}', [AdminController::class, 'supression']);
+
+
+Route::get('/adminproduit', [AdminController::class, 'listeProduit']);
+
+// // Route pour afficher le formulaire de modification d'un utilisateur
+// // Route::put('/admin/{id}', [AdminController::class, 'modification'])->name('admin.modification');
+// // Route pour la suppression d'un elements du  formulaire  d'un utilisateur
+// Route::delete('/admin/{id}', [AdminController::class, 'supression'])->name('admin.supression');
 
 // ****************************************************
+
+
+
+// 
 
 Route::get('/ajouterProduit', [AdminController::class, 'ajouterProduit']);
 Route::post('/ajouterProduit', [AdminController::class, 'store']);

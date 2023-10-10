@@ -26,6 +26,7 @@
     Gesstion client
 </div>
 
+
 <!-- Nav Item - Pages Collapse Menu -->
 <li class="nav-item">
     <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
@@ -56,6 +57,7 @@
             <h6 class="collapse-header">Gestion Utilisateurs:</h6> 
             <a class="collapse-item" href="{{url('produit') }}">Listes des Utilisateur</a>
             <a class="collapse-item" href="{{url('ajouterProduit') }}">Ajouter un produit</a>
+            <a class="collapse-item" href="{{url('adminproduit')}}">Afficher Liste Produit</a>
             <!-- <a class="collapse-item" href="#">Borders</a>
             <a class="collapse-item" href="utilities-animation.html">Animations</a>
             <a class="collapse-item" href="utilities-other.html">Other</a> -->
