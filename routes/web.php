@@ -32,10 +32,24 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+// ***************************************************
+// route pour la gestion d'un utilisateur cote administrateur
+Route::get('/produit', [AdminController::class, 'utilisateur']);
 
-Route::get('/produit', [AdminController::class, 'produit']);
+// Route pour afficher le formulaire de modification d'un utilisateur
+Route::get('/admin/edition/{id}/edit', [AdminController::class, 'edition']);
 
+// Route pour mettre à jour un utilisateur
+Route::put('/admin/modification/{id}', [AdminController::class, 'modification']);
 
+// Route pour supprimer un utilisateur
+Route::delete('/admin/supression/{id}', [AdminController::class, 'supression']);
+
+// ****************************************************
+
+Route::get('/ajouterProduit', [AdminController::class, 'ajouterProduit']);
+Route::post('/ajouterProduit', [AdminController::class, 'store']);
+// ****************************************************
 // Route middleware pour gerer l'authentification admin et user
 Route::middleware(['auth', 'role:admin'])->group(function () {
     Route::get('/administrator', [AdminController::class, 'index'])->name('admin.dashboard');

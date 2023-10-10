@@ -16,8 +16,8 @@ return new class extends Migration
         $table->id();
         $table->string('nom');
         $table->text('description');
-        $table->unsignedBigInteger('categorie_id');
-        $table->foreign('categorie_id')->references('id')->on('categories_produits');
+        $table->text('categorieProduit');
+        $table->string('image')->nullable();
         $table->decimal('prix', 10, 2);
         $table->integer('quantite_en_stock');
         $table->timestamps();
