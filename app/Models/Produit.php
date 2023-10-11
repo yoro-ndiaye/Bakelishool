@@ -17,7 +17,7 @@ class Produit extends Model
              ->withPivot('quantite');
      }
 
-    protected $fillable = ['nom', 'description','categorieProduit','prix','image','quantite_en_stock'];
+    protected $fillable = ['nom', 'description','categorieProduit','image' ,'prix', 'quantite_en_stock'];
  
 
         // 'password',

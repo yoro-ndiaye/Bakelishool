@@ -4,6 +4,7 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\AdminController;
+use App\Http\Controllers\UserController;
 use function PHPSTORM_META\type;
 
 /*
@@ -49,6 +50,14 @@ Route::delete('/admin/supression/{id}', [AdminController::class, 'supression']);
 
 Route::get('/ajouterProduit', [AdminController::class, 'ajouterProduit']);
 Route::post('/ajouterProduit', [AdminController::class, 'store']);
+
+//_______________________________________________________//
+
+
+Route::get('/dashboard', [UserController::class, 'index']);
+
+
+
 // ****************************************************
 // Route middleware pour gerer l'authentification admin et user
 Route::middleware(['auth', 'role:admin'])->group(function () {

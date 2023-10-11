@@ -7,6 +7,39 @@
  @include('User.produit')
    <!-- End Pricing Section -->
 
+    <!-- ======= Pricing Section ======= -->
+ <!-- resources/views/index.blade.php -->
+
+ <section class="listproduit">
+    <div class="container">
+        <h1 class="text-center mb-4">Liste des Produits</h1>
+
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            @foreach ($produits as $produit)
+                <div class="col">
+                    <div class="card h-100">
+                        @if ($produit->image)
+                            <img class="card-img-top" src="{{ asset('produitimage/' . $produit->image) }}" alt="{{ $produit->nom }}">
+                        @endif
+                        <div class="card-body">
+                            <h5 class="card-title">{{ $produit->nom }}</h5>
+                            <p class="card-text"><strong>Catégorie:</strong> {{ $produit->categorieProduit }}</p>
+                            <p class="card-text"><strong>Prix:</strong> {{ $produit->prix }} FCFA</p>
+                          
+                          </div>
+                        <div class="card-footer text-center">
+                            <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-info-circle"></i> Détails</a>
+                            <a href="#" class="btn btn-success btn-sm"><i class="fas fa-cart-plus"></i> Ajouter au panier</a>
+                        </div>
+                    </div>
+                </div>
+            @endforeach
+        </div>
+    </div>
+</section>
+
+   <!-- End Pricing Section -->
+
     <!-- ======= Frequently Asked Questions Section ======= -->
    
       </div>
