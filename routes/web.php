@@ -5,7 +5,10 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\UserController;
+<<<<<<< HEAD
+=======
 
+>>>>>>> 353aa64ba76f681b09e1dad2cff0dacedae35102
 use function PHPSTORM_META\type;
 
 /*
@@ -72,6 +75,14 @@ Route::get('/userliste',[AdminController::class, 'userliste']);
 
 Route::get('/ajouterProduit', [AdminController::class, 'ajouterProduit']);
 Route::post('/ajouterProduit', [AdminController::class, 'store']);
+
+//_______________________________________________________//
+
+
+Route::get('/dashboard', [UserController::class, 'index']);
+
+
+
 // ****************************************************
 // Route middleware pour gerer l'authentification admin et user
 Route::middleware(['auth', 'role:admin'])->group(function () {

@@ -9,6 +9,19 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
+.listProduit img{
+  width: 287px;
+  height: 300px;
+  
+  
+  }
+.card-body h5{
+  color: blue;
+}
+
+
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
