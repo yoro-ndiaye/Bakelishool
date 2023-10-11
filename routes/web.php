@@ -4,6 +4,8 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\AdminController;
+use App\Http\Controllers\UserController;
+
 use function PHPSTORM_META\type;
 
 /*
@@ -31,6 +33,14 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+// routes pour les commandes************************
+
+Route::get('/commandes', [ProfileController::class, 'utilisateursAvecCommandes'])->name('commandes.index');
+Route::get('/commandes/ajouter', [ProfileController::class, 'create'])->name('commandes.create');
+Route::post('/commandes', [ProfileController::class, 'store'])->name('commandes.store');
+// route pour voir des details de la commandes
+Route::get('/commandes/{id}', [ProfileController::class, 'show'])->name('commandes.show');
+
 });
 // ***************************************************
 // route pour la gestion d'un utilisateur cote administrateur
@@ -56,7 +66,7 @@ Route::get('/adminproduit', [AdminController::class, 'listeProduit']);
 
 // ****************************************************
 
-
+Route::get('/userliste',[AdminController::class, 'userliste']);
 
 // 
 
@@ -92,5 +102,15 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
 //              ->group('/private', [ProfileController::class, 'vieAdmin'])
 //              ->name('admin.dashboard');
 
+// ******************************Route commande pour  produit ****************************************************//
+
+
+
+// *****************************************************************route cote user************************//
+
+Route::get('/ajouter-au-panier/{id}',[UserController::class, 'ajouterAuPanier']);
+
+
+// ***********************************************************************************************************
 
 require __DIR__.'/auth.php';

@@ -22,6 +22,13 @@ class AdminController extends Controller
         return view('admin.utilisateur', ['users' => $users]);
         
     }     
+
+    public function userliste()
+    { $users = User::all(); // Récupère tous les utilisateurs
+        return view('admin.body', ['users' => $users]);
+        
+    }     
+
     public function edit($id)
     {
         $user = User::find($id);

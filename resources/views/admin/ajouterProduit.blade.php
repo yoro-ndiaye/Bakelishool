@@ -40,45 +40,52 @@
 </div>
 
 @endif
-    <form method="POST" action="{{ url('ajouterProduit') }}" enctype="multipart/form-data">
-    <!-- Protection CSRF -->    
-    @csrf 
-        <div class="form-group">
-            <label for="nom">Nom du Produit</label>
-            <input type="text" class="form-control" id="nom" name="nom" required>
+<form method="POST" action="{{ url('ajouterProduit') }}" enctype="multipart/form-data">
+    @csrf <!-- Protection CSRF -->
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="nom">Nom du Produit</label>
+                <input type="text" class="form-control" id="nom" name="nom" required>
+            </div>
         </div>
-        <div class="form-group">
-            <label for="categorieProduit">Catégorie Produit</label>
-            <input type="text" class="form-control" id="categorieProduit" name="categorieProduit" required>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="categorieProduit">Catégorie Produit</label>
+                <input type="text" class="form-control" id="categorieProduit" name="categorieProduit" required>
+            </div>
         </div>
+    </div>
 
-        <div class="form-group">
-    <label for="image">Image du Produit</label>
-    <input type="file" class="form-control-file" id="image" name="image">
-</div>
+    <div class="form-group">
+        <label for="image">Image du Produit</label>
+        <input type="file" class="form-control-file" id="image" name="image">
+    </div>
 
-        <div class="form-group">
-            <label for="description">Description</label>
-            <textarea class="form-control" id="description" name="description" rows="3" required></textarea>
+    <div class="form-group">
+        <label for="description">Description</label>
+        <textarea class="form-control" id="description" name="description" rows="3" required></textarea>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="prix">Prix</label>
+                <input type="number" class="form-control" id="prix" name="prix" required>
+            </div>
         </div>
-        <div class="form-group">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="quantite_en_stock">Quantité en Stock</label>
+                <input type="number" class="form-control" id="quantite_en_stock" name="quantite_en_stock" required>
+            </div>
+        </div>
+    </div>
     
-</div>
+    <!-- Ajoutez d'autres champs du produit ici si nécessaire -->
 
-</div>
-  </div>
-        <div class="form-group">
-            <label for="prix">Prix</label>
-            <input type="number" class="form-control" id="prix" name="prix" required>
-        </div>
-        <div class="form-group">
-            <label for="quantite_en_stock">Quantité en Stock</label>
-            <input type="number" class="form-control" id="quantite_en_stock" name="quantite_en_stock" required>
-        </div>
-        <!-- Ajoutez d'autres champs du produit ici si nécessaire -->
-
-        <button type="submit" class="btn btn-primary">Ajouter le Produit</button>
-    </form>
+    <button type="submit" class="btn btn-primary">Ajouter le Produit</button>
+</form>
 </div>
 
 </div>

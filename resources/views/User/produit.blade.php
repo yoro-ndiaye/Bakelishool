@@ -1,3 +1,6 @@
+<?php
+use App\Http\Models\Produit;
+?>
 <section id="pricing" class="pricing">
       <div class="container">
 
@@ -52,6 +55,9 @@
                 <a href="#" class="btn-buy">Buy Now</a>
               </div>
             </div>
+
+          
+
           </div>
 
           <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
