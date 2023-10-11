@@ -5,6 +5,10 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\UserController;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 353aa64ba76f681b09e1dad2cff0dacedae35102
 use function PHPSTORM_META\type;
 
 /*
@@ -32,21 +36,42 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+// routes pour les commandes************************
+
+Route::get('/commandes', [ProfileController::class, 'utilisateursAvecCommandes'])->name('commandes.index');
+Route::get('/commandes/ajouter', [ProfileController::class, 'create'])->name('commandes.create');
+Route::post('/commandes', [ProfileController::class, 'store'])->name('commandes.store');
+// route pour voir des details de la commandes
+Route::get('/commandes/{id}', [ProfileController::class, 'show'])->name('commandes.show');
+
 });
 // ***************************************************
 // route pour la gestion d'un utilisateur cote administrateur
-Route::get('/produit', [AdminController::class, 'utilisateur']);
+ Route::get('/produit', [AdminController::class, 'utilisateur']);
 
 // Route pour afficher le formulaire de modification d'un utilisateur
-Route::get('/admin/edition/{id}/edit', [AdminController::class, 'edition']);
+// Route::get('/admin/{id}/edition', [AdminController::class, 'edition'])->name('admin.edition');
+Route::get('/admin/users/{id}/edition', [AdminController::class, 'edition'])->name('admin.edition');
+// Route pour modifier un utilisateur dans la base de donnée
+Route::put('/admin/{user}',[AdminController::class,'modifierUser'])->name("admin.modification");
 
-// Route pour mettre à jour un utilisateur
-Route::put('/admin/modification/{id}', [AdminController::class, 'modification']);
+// Route pour afficher la liste des produit
+// routes/web.php
 
-// Route pour supprimer un utilisateur
-Route::delete('/admin/supression/{id}', [AdminController::class, 'supression']);
+
+
+Route::get('/adminproduit', [AdminController::class, 'listeProduit']);
+
+// // Route pour afficher le formulaire de modification d'un utilisateur
+// // Route::put('/admin/{id}', [AdminController::class, 'modification'])->name('admin.modification');
+// // Route pour la suppression d'un elements du  formulaire  d'un utilisateur
+// Route::delete('/admin/{id}', [AdminController::class, 'supression'])->name('admin.supression');
 
 // ****************************************************
+
+Route::get('/userliste',[AdminController::class, 'userliste']);
+
+// 
 
 Route::get('/ajouterProduit', [AdminController::class, 'ajouterProduit']);
 Route::post('/ajouterProduit', [AdminController::class, 'store']);
@@ -88,5 +113,15 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
 //              ->group('/private', [ProfileController::class, 'vieAdmin'])
 //              ->name('admin.dashboard');
 
+// ******************************Route commande pour  produit ****************************************************//
+
+
+
+// *****************************************************************route cote user************************//
+
+Route::get('/ajouter-au-panier/{id}',[UserController::class, 'ajouterAuPanier']);
+
+
+// ***********************************************************************************************************
 
 require __DIR__.'/auth.php';

@@ -30,26 +30,27 @@
                 <!-- Begin Page Content -->
              
 
-            
     <div class="container">
-        <h1>Modifier l'Utilisateur</h1>
-        <form method="POST" action="{{ url('admin.modification', $user->id) }}">
+        <h1>Modifier un Produit</h1>
+        <form method="POST" action="{{ url('produits.update', $produit->id) }}">
             @csrf
             @method('PUT')
-            <!-- Champs de modification de l'utilisateur -->
             <div class="form-group">
-                <label for="nom">Nom</label>
-                <input type="text" name="name" id="nom" value="{{ old('name', $users->name) }}" class="form-control">
+                <label for="nom">Nom du Produit</label>
+                <input type="text" class="form-control" id="nom" name="nom" value="{{ $produit->nom }}" required>
             </div>
             <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" value="{{ old('email', $user->email) }}" class="form-control">
+                <label for="description">Description</label>
+                <textarea class="form-control" id="description" name="description" rows="3" required>{{ $produit->description }}</textarea>
             </div>
-            <!-- Ajoutez d'autres champs de modification ici -->
-
-            <button type="submit" class="btn btn-primary">Enregistrer les Modifications</button>
+            <div class="form-group">
+                <!-- Ajoutez d'autres champs de modification ici -->
+            </div>
+            <button type="submit" class="btn btn-primary">Mettre à jour le Produit</button>
         </form>
-          
+    </div>
+
+      
             <!-- End of Footer -->
 
         </div>

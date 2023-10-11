@@ -26,6 +26,7 @@
     Gesstion client
 </div>
 
+
 <!-- Nav Item - Pages Collapse Menu -->
 <li class="nav-item">
     <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
@@ -35,8 +36,8 @@
     </a>
     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Liste des commandes</h6>
-            <a class="collapse-item" href="#">Buttons</a>
+            <h6 class="collapse-header">Commandes</h6>
+            <a class="collapse-item" href="{{route('commandes.index')}}">Voir les commandes</a>
             <a class="collapse-item" href="#">Cards</a>
         </div>
     </div>
@@ -56,6 +57,7 @@
             <h6 class="collapse-header">Gestion Utilisateurs:</h6> 
             <a class="collapse-item" href="{{url('produit') }}">Listes des Utilisateur</a>
             <a class="collapse-item" href="{{url('ajouterProduit') }}">Ajouter un produit</a>
+            <a class="collapse-item" href="{{url('adminproduit')}}">Afficher Liste Produit</a>
             <!-- <a class="collapse-item" href="#">Borders</a>
             <a class="collapse-item" href="utilities-animation.html">Animations</a>
             <a class="collapse-item" href="utilities-other.html">Other</a> -->

@@ -20,4 +20,9 @@ class Commande extends Model
         return $this->belongsToMany(Produit::class, 'commande_produit', 'commande_id', 'produit_id')
             ->withPivot('quantite');
     }
+    // Modèle Commande
+protected $fillable = [
+    'user_id', 'description', 'etat','date_commande',
+];
+
 }
