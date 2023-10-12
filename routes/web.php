@@ -39,15 +39,55 @@ Route::get('/commandes/ajouter', [ProfileController::class, 'create'])->name('co
 Route::post('/commandes', [ProfileController::class, 'store'])->name('commandes.store');
 // route pour voir des details de la commandes
 Route::get('/commandes/{id}', [ProfileController::class, 'show'])->name('commandes.show');
+// *************************************************************************************
+// route pour la gestion des edit et update  & delete pour cote produits
+Route::get('/produits/{produit}/edit', [ProfileController::class,'edite'])->name('produits.edit');
+Route::put('/produits/{produit}', [ProfileController::class,'updatee'])->name('produit.update');
+Route::delete('/produits/{produit}', [ProfileController::class,'destroye'])->name('produits.destroy');
+// route pour voir les details du produits
+Route::get('/produits/{produit}/details', [ProfileController::class,'showDetails'])->name('produits.details');
+// ***************************************************************************************
+// route pour la gestion des edit et update  & delete  cote par l'administrateur
+Route::get('/user/{user}/edit', [ProfileController::class,'edition'])->name('user.edit');
+Route::put('/user/{user}', [ProfileController::class,'modification'])->name('user.modification');
+Route::delete('/user/{user}', [ProfileController::class,'supression'])->name('user.supression');
+// route pour voir les details du produits
+Route::get('/user/{user}/details', [ProfileController::class,'voirDetails'])->name('user.details');
+// ****************************************************************************************
 
 });
 // ***************************************************
+// Route::middleware('auth')->group(function () {
+// Routes pour les produits
+
+Route::get('/ajouterProduit', [AdminController::class, 'ajouterProduit']);
+Route::post('/ajouterProduit', [AdminController::class, 'store']);
+
+// Route::get('/produits', [ProduitController::class,'index'])->name('produits.ajouterProduit');
+// Route::get('/produits/{produit}', [ProduitController::class,'create'])->name('produits.create');
+// Route::post('/produits', [ProduitController::class,'store'])->name('produits.store');
+// Route::get('/produits/{produit}', [ProduitController::class,'show'])->name('produits.show');
+// Route::get('/produits/{produit}/edit', [ProduitController::class,'edit'])->name('produits.edit');
+// Route::put('/produits/{produit}', [ProduitController::class,'update'])->name('produits.update');
+// Route::delete('/produits/{produit}', [ProduitController::class,'destroy'])->name('produits.destroy');
+
+// // Routes pour les utilisateurs
+// Route::get('/utilisateurs', 'UtilisateurController@index')->name('utilisateurs.index');
+// Route::get('/utilisateurs/create', 'UtilisateurController@create')->name('utilisateurs.create');
+// Route::post('/utilisateurs', 'UtilisateurController@store')->name('utilisateurs.store');
+// Route::get('/utilisateurs/{utilisateur}', 'UtilisateurController@show')->name('utilisateurs.show');
+// Route::get('/utilisateurs/{utilisateur}/edit', 'UtilisateurController@edit')->name('utilisateurs.edit');
+// Route::put('/utilisateurs/{utilisateur}', 'UtilisateurController@update')->name('utilisateurs.update');
+// Route::delete('/utilisateurs/{utilisateur}', 'UtilisateurController@destroy')->name('utilisateurs.destroy');
+
+// });
+
 // route pour la gestion d'un utilisateur cote administrateur
  Route::get('/produit', [AdminController::class, 'utilisateur']);
 
 // Route pour afficher le formulaire de modification d'un utilisateur
 // Route::get('/admin/{id}/edition', [AdminController::class, 'edition'])->name('admin.edition');
-Route::get('/admin/users/{id}/edition', [AdminController::class, 'edition'])->name('admin.edition');
+// Route::get('/admin/users/{id}/edition', [AdminController::class, 'edition'])->name('admin.edition');
 // Route pour modifier un utilisateur dans la base de donnée
 Route::put('/admin/{user}',[AdminController::class,'modifierUser'])->name("admin.modification");
 
@@ -69,8 +109,8 @@ Route::get('/userliste',[AdminController::class, 'userliste']);
 
 // 
 
-Route::get('/ajouterProduit', [AdminController::class, 'ajouterProduit']);
-Route::post('/ajouterProduit', [AdminController::class, 'store']);
+// Route::get('/ajouterProduit', [AdminController::class, 'ajouterProduit']);
+// Route::post('/ajouterProduit', [AdminController::class, 'store']);
 
 //_______________________________________________________//
 
