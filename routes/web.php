@@ -5,10 +5,6 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\UserController;
-<<<<<<< HEAD
-=======
-
->>>>>>> 353aa64ba76f681b09e1dad2cff0dacedae35102
 use function PHPSTORM_META\type;
 
 /*
@@ -43,9 +39,41 @@ Route::get('/commandes/ajouter', [ProfileController::class, 'create'])->name('co
 Route::post('/commandes', [ProfileController::class, 'store'])->name('commandes.store');
 // route pour voir des details de la commandes
 Route::get('/commandes/{id}', [ProfileController::class, 'show'])->name('commandes.show');
+// route pour la gestion des edit et update  & delete pour cote produits
+Route::get('/produits/{produit}/edit', [ProfileController::class,'edite'])->name('produits.edit');
+Route::put('/produits/{produit}', [ProfileController::class,'updatee'])->name('produit.update');
+Route::delete('/produits/{produit}', [ProfileController::class,'destroye'])->name('produits.destroy');
+// route pour voir les details du produits
+Route::get('/produits/{produit}/details', [ProfileController::class,'showDetails'])->name('produits.details');
+
 
 });
 // ***************************************************
+// Route::middleware('auth')->group(function () {
+// Routes pour les produits
+
+Route::get('/ajouterProduit', [AdminController::class, 'ajouterProduit']);
+Route::post('/ajouterProduit', [AdminController::class, 'store']);
+
+// Route::get('/produits', [ProduitController::class,'index'])->name('produits.ajouterProduit');
+// Route::get('/produits/{produit}', [ProduitController::class,'create'])->name('produits.create');
+// Route::post('/produits', [ProduitController::class,'store'])->name('produits.store');
+// Route::get('/produits/{produit}', [ProduitController::class,'show'])->name('produits.show');
+// Route::get('/produits/{produit}/edit', [ProduitController::class,'edit'])->name('produits.edit');
+// Route::put('/produits/{produit}', [ProduitController::class,'update'])->name('produits.update');
+// Route::delete('/produits/{produit}', [ProduitController::class,'destroy'])->name('produits.destroy');
+
+// // Routes pour les utilisateurs
+// Route::get('/utilisateurs', 'UtilisateurController@index')->name('utilisateurs.index');
+// Route::get('/utilisateurs/create', 'UtilisateurController@create')->name('utilisateurs.create');
+// Route::post('/utilisateurs', 'UtilisateurController@store')->name('utilisateurs.store');
+// Route::get('/utilisateurs/{utilisateur}', 'UtilisateurController@show')->name('utilisateurs.show');
+// Route::get('/utilisateurs/{utilisateur}/edit', 'UtilisateurController@edit')->name('utilisateurs.edit');
+// Route::put('/utilisateurs/{utilisateur}', 'UtilisateurController@update')->name('utilisateurs.update');
+// Route::delete('/utilisateurs/{utilisateur}', 'UtilisateurController@destroy')->name('utilisateurs.destroy');
+
+// });
+
 // route pour la gestion d'un utilisateur cote administrateur
  Route::get('/produit', [AdminController::class, 'utilisateur']);
 
@@ -73,8 +101,8 @@ Route::get('/userliste',[AdminController::class, 'userliste']);
 
 // 
 
-Route::get('/ajouterProduit', [AdminController::class, 'ajouterProduit']);
-Route::post('/ajouterProduit', [AdminController::class, 'store']);
+// Route::get('/ajouterProduit', [AdminController::class, 'ajouterProduit']);
+// Route::post('/ajouterProduit', [AdminController::class, 'store']);
 
 //_______________________________________________________//
 

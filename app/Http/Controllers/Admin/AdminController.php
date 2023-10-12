@@ -98,7 +98,11 @@ return view('admin.show',compact($user));
             // Gérez le cas où l'image n'est pas présente
             return redirect()->route('admin.ajouterProduit')->with('error', 'L\'image du produit est requise.');
         }
+        // **************************Fonction pour mettre a jour un produit ***************************************************
     
+        
+
+        // *****************************************************************************************************
         // Enregistrez le produit dans la base de données
         Produit::create([
             'nom' => $request->input('nom'),
@@ -110,7 +114,7 @@ return view('admin.show',compact($user));
         ]);
     
        // Rediriger l'utilisateur vers une page de confirmation ou de liste des produits en utilisant des URLs
-return redirect('/ajouterProduit')->with('success', 'Le produit a été ajouté avec succès.');
+return redirect('/adminproduit')->with('success', 'Le produit a été ajouté avec succès.');
 
     }
 
@@ -121,5 +125,12 @@ return redirect('/ajouterProduit')->with('success', 'Le produit a été ajouté 
         return view('admin.listeProduit', compact('produits'));
     }
 
+
+
+
+
+
+
+    
       
 }

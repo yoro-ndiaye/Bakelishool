@@ -107,7 +107,7 @@ use Illuminate\Support\Facades\DB;
             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <i class="fas fa-envelope fa-fw"></i>
             <!-- Counter - Messages -->
-            <span class="badge badge-danger badge-counter"> <?php $nombreDeCommandes = DB::table('commandes')->count();?>
+            <span class="badge badge-danger badge-counter" style="font-size: xx-large;"> <?php $nombreDeCommandes = DB::table('commandes')->count();?>
 </span>
         </a>
         <!-- Dropdown - Messages -->

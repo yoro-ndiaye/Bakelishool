@@ -1,25 +1,21 @@
 <?php
 
 namespace App\Http\Controllers;
-<<<<<<< HEAD
-=======
-
->>>>>>> 353aa64ba76f681b09e1dad2cff0dacedae35102
 use App\Models\Produit;
-use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class UserController extends Controller
 {
-<<<<<<< HEAD
+
     public function index()
     {
         $produits = Produit::all();
 
         return view('dashboard', compact('produits'));
     }
-}
 
-=======
+
+
     public function listeProduitsAjoutes()
     {
         $produitsAjoutes = Produit::where('ajoute_par_utilisateur', true)->get();
@@ -27,4 +23,4 @@ class UserController extends Controller
     }
     
 }
->>>>>>> 353aa64ba76f681b09e1dad2cff0dacedae35102
+
