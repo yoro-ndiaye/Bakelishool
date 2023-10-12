@@ -39,13 +39,21 @@ Route::get('/commandes/ajouter', [ProfileController::class, 'create'])->name('co
 Route::post('/commandes', [ProfileController::class, 'store'])->name('commandes.store');
 // route pour voir des details de la commandes
 Route::get('/commandes/{id}', [ProfileController::class, 'show'])->name('commandes.show');
+// *************************************************************************************
 // route pour la gestion des edit et update  & delete pour cote produits
 Route::get('/produits/{produit}/edit', [ProfileController::class,'edite'])->name('produits.edit');
 Route::put('/produits/{produit}', [ProfileController::class,'updatee'])->name('produit.update');
 Route::delete('/produits/{produit}', [ProfileController::class,'destroye'])->name('produits.destroy');
 // route pour voir les details du produits
 Route::get('/produits/{produit}/details', [ProfileController::class,'showDetails'])->name('produits.details');
-
+// ***************************************************************************************
+// route pour la gestion des edit et update  & delete  cote par l'administrateur
+Route::get('/user/{user}/edit', [ProfileController::class,'edition'])->name('user.edit');
+Route::put('/user/{user}', [ProfileController::class,'modification'])->name('user.modification');
+Route::delete('/user/{user}', [ProfileController::class,'supression'])->name('user.supression');
+// route pour voir les details du produits
+Route::get('/user/{user}/details', [ProfileController::class,'voirDetails'])->name('user.details');
+// ****************************************************************************************
 
 });
 // ***************************************************
@@ -79,7 +87,7 @@ Route::post('/ajouterProduit', [AdminController::class, 'store']);
 
 // Route pour afficher le formulaire de modification d'un utilisateur
 // Route::get('/admin/{id}/edition', [AdminController::class, 'edition'])->name('admin.edition');
-Route::get('/admin/users/{id}/edition', [AdminController::class, 'edition'])->name('admin.edition');
+// Route::get('/admin/users/{id}/edition', [AdminController::class, 'edition'])->name('admin.edition');
 // Route pour modifier un utilisateur dans la base de donnée
 Route::put('/admin/{user}',[AdminController::class,'modifierUser'])->name("admin.modification");
 

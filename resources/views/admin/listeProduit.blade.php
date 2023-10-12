@@ -67,16 +67,16 @@ permettre la page beaucoup plus pro et conviviale -->
                     </td>
                     <td>
                         <div class="d-flex align-items-center">
-                        <a href="{{ route('produits.details', ['produit' => $produit->id]) }}" class="btn btn-info">Voir Détails</a>
-                                <i class="fas fa-eye"></i>S
+                        <a href="{{ route('produits.details', ['produit' => $produit->id]) }}" class="btn btn-info mr-2">
+                                <i class="fas fa-eye"></i>
                             </a>
                             <a href="{{ route('produits.edit', ['produit' => $produit->id]) }}" class="btn btn-primary mr-2" title="Éditer le produit">
-                                <i class="fas fa-edit"></i>M
+                                <i class="fas fa-edit"></i>
                             </a>
                             <button class="btn btn-danger btn-delete" 
                                 data-url="{{ route('produits.destroy', $produit->id) }}" 
                                 data-id="{{ $produit->id }}">
-                                <i class="fas fa-trash"></i>S
+                                <i class="fas fa-trash"></i>
                             </button>
 
                             <!-- <form action="{{ route('produits.destroy', $produit->id) }}" method="POST">
