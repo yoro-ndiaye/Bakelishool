@@ -4,7 +4,7 @@
 <!-- ======= Header ======= -->
 
    <!-- ======= Pricing Section ======= -->
- @include('User.produit')
+
    <!-- End Pricing Section -->
 
     <!-- ======= Pricing Section ======= -->
@@ -25,11 +25,64 @@
                             <h5 class="card-title">{{ $produit->nom }}</h5>
                             <p class="card-text"><strong>Catégorie:</strong> {{ $produit->categorieProduit }}</p>
                             <p class="card-text"><strong>Prix:</strong> {{ $produit->prix }} FCFA</p>
-                          
-                          </div>
+                        </div>
                         <div class="card-footer text-center">
-                            <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-info-circle"></i> Détails</a>
-                            <a href="#" class="btn btn-success btn-sm"><i class="fas fa-cart-plus"></i> Ajouter au panier</a>
+                            <button class="btn btn-primary btn-sm details-btn" data-toggle="modal" data-target="#detailsModal{{ $produit->id }}">
+                            <i class="bi bi-info-circle"></i> Détails
+                            </button>
+                            <a href="#" class="btn btn-success btn-sm"><i class="bi bi-cart-plus-fill"></i> Ajouter au panier</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal for Product Details -->
+                <div class="modal fade" id="detailsModal{{ $produit->id }}" tabindex="-1" role="dialog" aria-labelledby="detailsModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="detailsModalLabel">Détails du Produit</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <!-- Tableau des détails du produit -->
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Nom</th>
+                                            <td>{{ $produit->nom }}</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Description</th>
+                                            <td>{{ $produit->description }}</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Catégorie</th>
+                                            <td>{{ $produit->categorieProduit }}</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Prix</th>
+                                            <td>{{ $produit->prix }} FCFA</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Quantité en stock</th>
+                                            <td>{{ $produit->quantite_en_stock }}</td>
+                                        </tr>
+                                        <tr>
+                            <th scope="row">Image</th>
+                            <td>
+                                @if ($produit->image)
+                                    <img src="{{ asset('produitimage/' . $produit->image) }}" alt="{{ $produit->nom }}" style="max-width: 100px;">
+                                @else
+                                    Aucune image disponible
+                                @endif
+                            </td>
+                        </tr>
+                                        <!-- Ajouter d'autres détails du produit ici -->
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -37,6 +90,25 @@
         </div>
     </div>
 </section>
+
+<!-- Assure-toi d'inclure jQuery et Bootstrap JS dans ta page -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+
+<script>
+    // Script pour afficher/masquer les détails du produit dans le modal
+    $(document).ready(function () {
+        $('.details-btn').click(function () {
+            // Trouve le modal associé au bouton cliqué
+            var modalId = $(this).data('target');
+            var modal = $(modalId);
+
+            // Affiche le modal
+            modal.modal('show');
+        });
+    });
+</script>
+
 
    <!-- End Pricing Section -->
 

@@ -44,7 +44,7 @@
   <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo me-auto"><a href="index.html">Gestio-Stock</a></h1>
+      <h1 class="logo me-auto"><a href="index.html"><i class="bi bi-shop"></i> BAKELI TECH ELECTRONIQUE <i class="bi bi-shop"></i></a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -182,27 +182,42 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Features</h2>
-          <p>Check our Features</p>
+          <h2>Votre Boutique</h2>
+          <p>Votre desir notre priorité!</p>
         </div>
 
         <div class="row">
           <div class="col-lg-3">
             <ul class="nav nav-tabs flex-column">
               <li class="nav-item">
-                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Modi sit est</a>
+                <a class="nav-link active show" data-bs-toggle="tab" href="#">Nos Catégorie de produits</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Unde praesentium sed</a>
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Smartphones et Téléphones</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Pariatur explicabo vel</a>
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Ordinateurs et Portables </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tab-4">Nostrum qui quasi</a>
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-4">Appareils Photo et Caméras</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tab-5">Iusto ut expedita aut</a>
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-5">Audio et Écouteurs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-5">Téléviseurs et Accessoires TV</a>
+              </li>
+               <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-5">Appareils Électroménagers </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-5">Jeux Vidéo et Consoles</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-5">Montres et Bracelets Connectés</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-5">Accessoires Électroniques Généraux </a>
               </li>
             </ul>
           </div>
@@ -211,12 +226,12 @@
               <div class="tab-pane active show" id="tab-1">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Architecto ut aperiam autem id</h3>
-                    <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
-                    <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
+                    <h3>Produit de Qualité Cerifié</h3>
+                    <p class="fst-italic fw-bold">Découvrez l'avenir de la technologie avec Bakeli Tech, votre destination incontournable pour tous vos besoins électroniques. Plongez dans un univers où l'innovation rencontre la performance, et explorez une gamme exceptionnelle de produits électroniques de pointe. De smartphones élégants à des ordinateurs puissants, en passant par des accessoires intelligents et des gadgets futuristes, Bakeli Tech offre une sélection soigneusement curated pour répondre à vos exigences les plus élevées.</p>
+                    <p>Plongez dans l'expérience Bakeli Tech et explorez un monde de possibilités. Notre équipe dévouée est prête à vous guider à travers notre gamme de produits exceptionnels, à vous offrir des conseils d'experts et à rendre votre expérience d'achat aussi fluide que possible. Avec Bakeli Tech, embrassez l'avenir de la technologie et faites de chaque instant une opportunité de découvrir l'extraordinaire. Bienvenue dans le monde passionnant de Bakeli Tech, où l'innovation devient accessible à tous.</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/features-1.png" alt="" class="img-fluid">
+                    <img src="assets/img/feature-1.png" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -228,7 +243,7 @@
                     <p>Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia et reiciendis sunt sunt est. Non aliquid repellendus itaque accusamus eius et velit ipsa voluptates. Optio nesciunt eaque beatae accusamus lerode pakto madirna desera vafle de nideran pal</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/features-2.png" alt="" class="img-fluid">
+                    <img src="/img/features-2.png" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>

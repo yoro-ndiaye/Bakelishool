@@ -5,10 +5,6 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\UserController;
-<<<<<<< HEAD
-=======
-
->>>>>>> 353aa64ba76f681b09e1dad2cff0dacedae35102
 use function PHPSTORM_META\type;
 
 /*
