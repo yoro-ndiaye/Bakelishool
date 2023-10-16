@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Services - Sailor Bootstrap Template</title>
+  <title>Bakeli Tech</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -43,8 +43,12 @@
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center">
-
-      <h1 class="logo me-auto"><a href="index.html"><i class="bi bi-shop"></i> BAKELI TECH ELECTRONIQUE <i class="bi bi-shop"></i></a></h1>
+      <div class="d-flex text-align-center">
+        <div>
+      <img src="assets/img/feature-1.png" style="height: 40px;" alt="" class="img-fluid">
+      </div>
+      <h1 class="logo me-auto"><a href="index.html">BAKELI TECH ELECTRONIQUE </h1>
+      </div>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -190,7 +194,7 @@
           <div class="col-lg-3">
             <ul class="nav nav-tabs flex-column">
               <li class="nav-item">
-                <a class="nav-link active show" data-bs-toggle="tab" href="#">Nos Catégorie de produits</a>
+                <a class="nav-link active show fw-bold text-uppercase" data-bs-toggle="tab" href="#">Nos Catégorie de produits</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Smartphones et Téléphones</a>
@@ -227,20 +231,22 @@
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
                     <h3>Produit de Qualité Cerifié</h3>
-                    <p class="fst-italic fw-bold">Découvrez l'avenir de la technologie avec Bakeli Tech, votre destination incontournable pour tous vos besoins électroniques. Plongez dans un univers où l'innovation rencontre la performance, et explorez une gamme exceptionnelle de produits électroniques de pointe. De smartphones élégants à des ordinateurs puissants, en passant par des accessoires intelligents et des gadgets futuristes, Bakeli Tech offre une sélection soigneusement curated pour répondre à vos exigences les plus élevées.</p>
-                    <p>Plongez dans l'expérience Bakeli Tech et explorez un monde de possibilités. Notre équipe dévouée est prête à vous guider à travers notre gamme de produits exceptionnels, à vous offrir des conseils d'experts et à rendre votre expérience d'achat aussi fluide que possible. Avec Bakeli Tech, embrassez l'avenir de la technologie et faites de chaque instant une opportunité de découvrir l'extraordinaire. Bienvenue dans le monde passionnant de Bakeli Tech, où l'innovation devient accessible à tous.</p>
+                    <p class="fst-italic fw-bold">Découvrez l'avenir de la technologie avec Bakeli Tech.</p>
+                    <p>Plongez dans l'expérience Bakeli Tech et explorez un monde de possibilités. Notre équipe dévouée est prête à vous guider à travers notre gamme de produits exceptionnels, à vous offrir des conseils d'experts et à rendre votre expérience d'achat aussi fluide que possible.</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="assets/img/feature-1.png" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
+              <hr>
               <div class="tab-pane" id="tab-2">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Et blanditiis nemo veritatis excepturi</h3>
-                    <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
-                    <p>Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia et reiciendis sunt sunt est. Non aliquid repellendus itaque accusamus eius et velit ipsa voluptates. Optio nesciunt eaque beatae accusamus lerode pakto madirna desera vafle de nideran pal</p>
+                    <h3>la gamme de produits </h3>
+                    <p>Smartphones </p>
+                    <p>Téléphones basiques</p>
+                    <p>Accessoires pour téléphones (coques, chargeurs, écouteurs, etc.)</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="/img/features-2.png" alt="" class="img-fluid">
@@ -250,9 +256,10 @@
               <div class="tab-pane" id="tab-3">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Impedit facilis occaecati odio neque aperiam sit</h3>
-                    <p class="fst-italic">Eos voluptatibus quo. Odio similique illum id quidem non enim fuga. Qui natus non sunt dicta dolor et. In asperiores velit quaerat perferendis aut</p>
-                    <p>Iure officiis odit rerum. Harum sequi eum illum corrupti culpa veritatis quisquam. Neque necessitatibus illo rerum eum ut. Commodi ipsam minima molestiae sed laboriosam a iste odio. Earum odit nesciunt fugiat sit ullam. Soluta et harum voluptatem optio quae</p>
+                  <h3>la gamme de produits </h3>
+                    <p>Ordinateurs portables</p>
+                    <p>Ordinateurs de bureau</p>
+                    <p>Accessoires informatiques (souris, claviers, sacs pour ordinateurs portables, etc.)</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="assets/img/features-3.png" alt="" class="img-fluid">
@@ -262,9 +269,10 @@
               <div class="tab-pane" id="tab-4">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Fuga dolores inventore laboriosam ut est accusamus laboriosam dolore</h3>
-                    <p class="fst-italic">Totam aperiam accusamus. Repellat consequuntur iure voluptas iure porro quis delectus</p>
-                    <p>Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum ipsam necessitatibus aliquam fugiat debitis quis velit. Eum ex maxime error in consequatur corporis atque. Eligendi asperiores sed qui veritatis aperiam quia a laborum inventore</p>
+                  <h3>la gamme de produits </h3>
+                    <p>Smartphones </p>
+                    <p>Téléphones basiques</p>
+                    <p>Accessoires pour téléphones (coques, chargeurs, écouteurs, etc.)</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="assets/img/features-4.png" alt="" class="img-fluid">
@@ -274,10 +282,12 @@
               <div class="tab-pane" id="tab-5">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Est eveniet ipsam sindera pad rone matrelat sando reda</h3>
-                    <p class="fst-italic">Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</p>
-                    <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel</p>
+                  <h3>la gamme de produits </h3>
+                    <p>Smartphones </p>
+                    <p>Téléphones basiques</p>
+                    <p>Accessoires pour téléphones (coques, chargeurs, écouteurs, etc.)</p>
                   </div>
+                  
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="assets/img/features-5.png" alt="" class="img-fluid">
                   </div>
