@@ -158,5 +158,80 @@ public function store(Request $request)
 
     return redirect()->route('commandes.index')->with('success', 'La commande a été ajoutée avec succès.');
 }
+// **********************methode modification pour modifier un produit deja ajouter ***********************
+public function edite($id)
+{
+    $produit = Produit::find($id);
+
+    if (!$produit) {
+        return redirect('listeProduit')->with('error', 'Produit non trouvé.');
+    }
+
+    return view('admin.edit', compact('produit'));
+}
+ // **************************fonction pour la mise a jour d'un produit 
+ public function updatee(Request $request, $id)
+{
+    $request->validate([
+        'nom' => 'required|string|max:255',
+        'description' => 'required|string',
+        'categorieProduit' => 'required|string|max:255',
+        'prix' => 'required|numeric',
+        'quantite_en_stock' => 'required|integer',
+        'image' => 'image|mimes:jpeg,png,jpg,gif|max:2048', // Validation de l'image
+    ]);
+
+    $produit = Produit::find($id);
+
+    if (!$produit) {
+        return redirect('admin.ajouterProduit')->with('error', 'Produit non trouvé.');
+    }
+
+    if ($request->hasFile('image')) {
+        // Supprimez l'ancienne image s'il en existe une
+        if (file_exists(public_path('produitimage/' . $produit->image)) ) {
+            unlink(public_path('produitimage/' . $produit->image));
+        }
+
+        $image = $request->file('image');
+        $imageName = time() . '.' . $image->getClientOriginalExtension();
+        $image->move(public_path('produitimage'), $imageName);
+        $produit->image = $imageName;
+    }
+
+    // Mise à jour des autres champs du produit
+    $produit->nom = $request->input('nom');
+    $produit->description = $request->input('description');
+    $produit->categorieProduit = $request->input('categorieProduit');
+    $produit->prix = $request->input('prix');
+    $produit->quantite_en_stock = $request->input('quantite_en_stock');
+    $produit->save();
+
+    return redirect('adminproduit')->with('success', 'Produit mis à jour avec succès.');
+}
+// ------************************function supression d'un produit******************------------------//
+public function destroye(Produit $produit)
+{
+    // Supprimez l'image du produit si elle existe
+    if (file_exists(public_path('produitimage/' . $produit->image))) {
+        unlink(public_path('produitimage/' . $produit->image));
+    }
+
+    $produit->delete();
+
+    return redirect()->route('adminproduit')->with('success', 'Produit supprimé avec succès.');
+}
+
+//    -------------function pour voir les details du produits
+public function showDetails(Produit $produit)
+{
+    return view('admin.produits.details', compact('produit'));
+}
+
 
 }
+
+
+
+
+

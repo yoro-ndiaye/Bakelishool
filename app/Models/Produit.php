@@ -11,6 +11,12 @@ class Produit extends Model
      // Relation : Un produit appartient à une catégorie
   
      // Relation : Un produit peut être inclus dans plusieurs commandes
+    public function paniers()
+    {
+        return $this->belongsToMany(Panier::class, 'panierProduit')->withPivot('nombre', 'montant');
+    }
+
+
      public function commandes()
      {
          return $this->belongsToMany(Commande::class, 'commande_produit', 'produit_id', 'commande_id')

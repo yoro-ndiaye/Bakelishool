@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Sailor Bootstrap Template - Index</title>
+  <title>SEN-TECH Electronique</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -48,6 +48,7 @@
 
       <h1 class="logo me-auto"><img style="height: 90px; width:60px;" src="assets/img/SEN-TECH LOGO.png" alt="" srcset="">
 <a href="index.html">SEN-TECH</a></h1>
+
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 <!-- Navbar-->

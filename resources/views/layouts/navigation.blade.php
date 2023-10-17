@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Services - Sailor Bootstrap Template</title>
+  <title>Bakeli Tech</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -43,8 +43,17 @@
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center">
+<<<<<<< HEAD
     <img style="height: 60px; width:60px;" src="assets/img/SEN-TECH LOGO.png" alt="" srcset="">
       <h1 class="logo me-auto ms-3"><a href="index.html">SEN-TECH</a></h1>
+=======
+      <div class="d-flex text-align-center">
+        <div>
+      <img src="assets/img/feature-1.png" style="height: 40px;" alt="" class="img-fluid">
+      </div>
+      <h1 class="logo me-auto"><a href="index.html">BAKELI TECH ELECTRONIQUE </h1>
+      </div>
+>>>>>>> 7c2d5bcbfa00114aff58444fb59305fccd386005
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -182,14 +191,20 @@
       <div class="container">
 
         <div class="section-title">
+<<<<<<< HEAD
           <h2>SEN-TECH</h2>
           <p>la solution informatique</p>
+=======
+          <h2>Votre Boutique</h2>
+          <p>Votre desir notre priorité!</p>
+>>>>>>> 7c2d5bcbfa00114aff58444fb59305fccd386005
         </div>
 
         <div class="row">
           <div class="col-lg-3">
             <ul class="nav nav-tabs flex-column">
               <li class="nav-item">
+<<<<<<< HEAD
                 <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Nos Ordinateurs</a>
               </li>
               <li class="nav-item">
@@ -200,6 +215,36 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" data-bs-toggle="tab" href="#tab-4">Accessoires</a>
+=======
+                <a class="nav-link active show fw-bold text-uppercase" data-bs-toggle="tab" href="#">Nos Catégorie de produits</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Smartphones et Téléphones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Ordinateurs et Portables </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-4">Appareils Photo et Caméras</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-5">Audio et Écouteurs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-5">Téléviseurs et Accessoires TV</a>
+              </li>
+               <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-5">Appareils Électroménagers </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-5">Jeux Vidéo et Consoles</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-5">Montres et Bracelets Connectés</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-5">Accessoires Électroniques Généraux </a>
+>>>>>>> 7c2d5bcbfa00114aff58444fb59305fccd386005
               </li>
              
             </ul>
@@ -209,33 +254,36 @@
               <div class="tab-pane active show" id="tab-1">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Architecto ut aperiam autem id</h3>
-                    <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
-                    <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
+                    <h3>Produit de Qualité Cerifié</h3>
+                    <p class="fst-italic fw-bold">Découvrez l'avenir de la technologie avec Bakeli Tech.</p>
+                    <p>Plongez dans l'expérience Bakeli Tech et explorez un monde de possibilités. Notre équipe dévouée est prête à vous guider à travers notre gamme de produits exceptionnels, à vous offrir des conseils d'experts et à rendre votre expérience d'achat aussi fluide que possible.</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/features-1.png" alt="" class="img-fluid">
+                    <img src="assets/img/feature-1.png" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
+              <hr>
               <div class="tab-pane" id="tab-2">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Et blanditiis nemo veritatis excepturi</h3>
-                    <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
-                    <p>Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia et reiciendis sunt sunt est. Non aliquid repellendus itaque accusamus eius et velit ipsa voluptates. Optio nesciunt eaque beatae accusamus lerode pakto madirna desera vafle de nideran pal</p>
+                    <h3>la gamme de produits </h3>
+                    <p>Smartphones </p>
+                    <p>Téléphones basiques</p>
+                    <p>Accessoires pour téléphones (coques, chargeurs, écouteurs, etc.)</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/features-2.png" alt="" class="img-fluid">
+                    <img src="/img/features-2.png" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
               <div class="tab-pane" id="tab-3">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Impedit facilis occaecati odio neque aperiam sit</h3>
-                    <p class="fst-italic">Eos voluptatibus quo. Odio similique illum id quidem non enim fuga. Qui natus non sunt dicta dolor et. In asperiores velit quaerat perferendis aut</p>
-                    <p>Iure officiis odit rerum. Harum sequi eum illum corrupti culpa veritatis quisquam. Neque necessitatibus illo rerum eum ut. Commodi ipsam minima molestiae sed laboriosam a iste odio. Earum odit nesciunt fugiat sit ullam. Soluta et harum voluptatem optio quae</p>
+                  <h3>la gamme de produits </h3>
+                    <p>Ordinateurs portables</p>
+                    <p>Ordinateurs de bureau</p>
+                    <p>Accessoires informatiques (souris, claviers, sacs pour ordinateurs portables, etc.)</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="assets/img/features-3.png" alt="" class="img-fluid">
@@ -245,9 +293,10 @@
               <div class="tab-pane" id="tab-4">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Fuga dolores inventore laboriosam ut est accusamus laboriosam dolore</h3>
-                    <p class="fst-italic">Totam aperiam accusamus. Repellat consequuntur iure voluptas iure porro quis delectus</p>
-                    <p>Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum ipsam necessitatibus aliquam fugiat debitis quis velit. Eum ex maxime error in consequatur corporis atque. Eligendi asperiores sed qui veritatis aperiam quia a laborum inventore</p>
+                  <h3>la gamme de produits </h3>
+                    <p>Smartphones </p>
+                    <p>Téléphones basiques</p>
+                    <p>Accessoires pour téléphones (coques, chargeurs, écouteurs, etc.)</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="assets/img/features-4.png" alt="" class="img-fluid">
@@ -257,10 +306,12 @@
               <div class="tab-pane" id="tab-5">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Est eveniet ipsam sindera pad rone matrelat sando reda</h3>
-                    <p class="fst-italic">Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</p>
-                    <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel</p>
+                  <h3>la gamme de produits </h3>
+                    <p>Smartphones </p>
+                    <p>Téléphones basiques</p>
+                    <p>Accessoires pour téléphones (coques, chargeurs, écouteurs, etc.)</p>
                   </div>
+                  
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="assets/img/features-5.png" alt="" class="img-fluid">
                   </div>
