@@ -55,6 +55,7 @@
 @include('profile/partials.header')
    <!-- .navbar -->
 
+   
     </div>
   </header><!-- End Header -->
 
