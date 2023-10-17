@@ -43,8 +43,8 @@
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center">
-
-      <h1 class="logo me-auto"><a href="index.html">Gestio-Stock</a></h1>
+    <img style="height: 60px; width:60px;" src="assets/img/SEN-TECH LOGO.png" alt="" srcset="">
+      <h1 class="logo me-auto ms-3"><a href="index.html">SEN-TECH</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -114,22 +114,22 @@
     <section id="breadcrumbs" class="breadcrumbs">
       <div class="container">
 
-        <div class="d-flex justify-content-between align-items-center">
+        <!-- <div class="d-flex justify-content-between align-items-center">
           <h2>Services</h2>
           <ol>
             <li><a href="#">Accueil</a></li>
             <li>Services</li>
           </ol>
-        </div>
+        </div> -->
 
       </div>
     </section><!-- End Breadcrumbs -->
 
     <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
+    <!-- <section id="services" class="services">
       <div class="container">
 
-        <!-- <div class="row">
+        <div class="row">
           <div class="col-md-6">
             <div class="icon-box">
               <i class="bi bi-briefcase"></i>
@@ -172,38 +172,36 @@
               <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
             </div>
           </div>
-        </div> -->
+        </div>
 
       </div>
-    </section><!-- End Services Section -->
+    </section>End Services Section -->
 
     <!-- ======= Features Section ======= -->
     <section id="features" class="features">
       <div class="container">
 
         <div class="section-title">
-          <h2>Features</h2>
-          <p>Check our Features</p>
+          <h2>SEN-TECH</h2>
+          <p>la solution informatique</p>
         </div>
 
         <div class="row">
           <div class="col-lg-3">
             <ul class="nav nav-tabs flex-column">
               <li class="nav-item">
-                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Modi sit est</a>
+                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Nos Ordinateurs</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Unde praesentium sed</a>
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Telephone</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Pariatur explicabo vel</a>
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-3">maintenance</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tab-4">Nostrum qui quasi</a>
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-4">Accessoires</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tab-5">Iusto ut expedita aut</a>
-              </li>
+             
             </ul>
           </div>
           <div class="col-lg-9 mt-4 mt-lg-0">

@@ -1,7 +1,7 @@
 <?php
 use App\Http\Models\Produit;
 ?>
-<section id="pricing" class="pricing">
+<!-- <section id="pricing" class="pricing">
       <div class="container">
 
         <div class="row">
@@ -81,4 +81,4 @@ use App\Http\Models\Produit;
         </div>
 
       </div>
-    </section>
+    </section> -->

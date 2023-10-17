@@ -46,7 +46,8 @@
   <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo me-auto"><a href="index.html">Gestion-Stock</a></h1>
+      <h1 class="logo me-auto"><img style="height: 90px; width:60px;" src="assets/img/SEN-TECH LOGO.png" alt="" srcset="">
+<a href="index.html">SEN-TECH</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 <!-- Navbar-->
@@ -68,7 +69,7 @@
         <div class="carousel-item active" style="background-image: url(assets/img/slide/slide-1.jpg)">
           <div class="carousel-container">
             <div class="container">
-              <h2 class="animate__animated animate__fadeInDown">Bienvenue dans Votre <span>Space de Gestion de Stock <br><i class="fas fa-archive"></i></span></h2>
+              <h2 class="animate__animated animate__fadeInDown">Bienvenue dans Votre <span>boutique SEN-TECH<br><i class="fas fa-archive"></i></span></h2>
               <p class="animate__animated animate__fadeInUp">Passez vos commande et obtenez votre produit dans les meilleurs delai.</p>
               <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Lancez-Vous</a>
             </div>
@@ -79,9 +80,9 @@
         <div class="carousel-item" style="background-image: url(assets/img/slide/slide-2.jpg)">
           <div class="carousel-container">
             <div class="container">
-              <h2 class="animate__animated animate__fadeInDown">Ici le Client est Rois<i class="fas fa-crown"></i>
+              <h2 class="animate__animated animate__fadeInDown">Ici le Client est Roi<i class="fas fa-crown"></i>
 </h2>
-              <p class="animate__animated animate__fadeInUp">Vous souhaiter acheter des produit, vous etes la bienvenu  cher(e)s  client  </p>
+              <p class="animate__animated animate__fadeInUp">Vous souhaitez acheter des produit, vous êtes la bienvenue  cher(e)  client  </p>
               <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Jaay-maa <i class="fas fa-user"></i> </a>
             </div>
           </div>
@@ -120,11 +121,11 @@
         <div class="row ">
           <div class="col-lg-6">
             <h1 class="aventure vibrate">Dall cill akk Diam !</h1>
-            <h3 style="padding-top:20px;" class="float">Dans votre espace  <span style="color: green;">  Terangua </span><span style="color: orange;"> Xeweulou  </span><span style="color: red;"> Keur Gui</span></h3>
+            <h3 style="padding-top:20px;" class="float">Dans votre boutique  <span style="color: green;">  Teranga </span><span style="color: orange;"> Xeweulou  </span><span style="color: red;"> Keur Gui</span></h3>
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0">
             <p>
-             Veillez creer un comptes utilisateurs  pour  avoir acces dans notres  plateformes si Vous n'avez pas encore de compte
+             Veillez creer un comptes utilisateurs  pour  avoir acces à notre plateforme si Vous n'avez pas encore de compte
 
             </p>
             <ul>
